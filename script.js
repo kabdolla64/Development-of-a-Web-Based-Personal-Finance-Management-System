@@ -1,4 +1,3 @@
-
 let transactions = [];
 let budgets = {};
 let goals = [];
@@ -236,8 +235,6 @@ function renderExpenseChart() {
 
 
 function updateGoalsProgress(balance) {
-    // Здесь можно использовать balance или только накопления;
-    // для простоты считаем, что весь положительный баланс идёт на цели
     const available = Math.max(balance, 0);
     const perGoal = goals.length > 0 ? available / goals.length : 0;
 
